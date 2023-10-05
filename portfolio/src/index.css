@@ -4,21 +4,17 @@
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* Nav-Bar */
 
 .cover {
     background-image: url("./img/banner.png");
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 100%), 
-                url('img/banner.png');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 100%), url('img/banner.png');
     background-repeat: none;
     background-size: cover;
     height: 100vh;
-}
-
-#logo {
-    margin: 20px;
-    width: 130px;
-    position: fixed;
 }
 
 .nav {
@@ -26,6 +22,12 @@
     align-items: top;
     justify-content: space-between;
     color: white;
+}
+
+#logo {
+    margin: 20px;
+    width: 130px;
+    position: fixed;
 }
 
 .links {
@@ -39,20 +41,69 @@
 
 .links > a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.navcenter-area{
+.links > a:hover {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+}
+
+/* Nav-Area */
+
+.navcenter-area {
     padding-top: 120px;
     width: 100%;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.infocard{
+.infocard {
     background-color: white;
     width: 30%;
     height: 50em;
     margin-right: 150px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 50px;
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+
+.title > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1268px) {
+    .links {
+        padding-right: 50px;
+        gap: 60px;
+    }
+
+    .navcenter-area {
+        display: flex;
+        justify-content: center;
+    }
+
+    .infocard {
+        width: 50%;
+        height: 500px;
+        border-radius: 30px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .links {
+        padding-right: 20px;
+        gap: 30px;
+    }
 }

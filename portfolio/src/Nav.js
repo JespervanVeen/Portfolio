@@ -14,7 +14,10 @@ const Nav = () => {
             </div>
             <div className="navcenter-area">
                 <div className="infocard">
-                    <h1>Jesper</h1>
+                    <div className="title">
+                        <h1>Jesper</h1>
+                        <h3>Software Developer</h3>
+                    </div>
                 </div>
             </div>
         </div>  
