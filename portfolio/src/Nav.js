@@ -13,7 +13,9 @@ const Nav = () => {
                 </div>
             </div>
             <div className="navcenter-area">
-                <p>Hallo</p>
+                <div className="infocard">
+                    <h1>Jesper</h1>
+                </div>
             </div>
         </div>  
     ); 
