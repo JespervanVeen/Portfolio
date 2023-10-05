@@ -3,7 +3,6 @@ const Nav = () => {
         <div className="lol">
             <img src="luffy.png" alt="lowl" />
         </div>
-        
     );
 }
  
