@@ -62,7 +62,7 @@
 .infocard {
     background-color: white;
     width: 30%;
-    height: 50em;
+    height: 58em;
     margin-right: 150px;
 }
 
@@ -78,6 +78,56 @@
 .title > * {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.cards{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Children will be arranged in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-end; /* Align children at the bottom */
+    width: 18em;
+    height: 18em;
+    color: rgb(0, 0, 0);
+    border: 10px solid black;
+    border-radius: 30px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: transform 0.6 ease;
+}
+
+.card > h1{
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    background-color: rgb(201, 201, 201);
+    transform: translateY(-10px);
+}
+
+.cards .card:nth-child(1) {
+    background-image: url("img/user.png");
+}
+
+.cards .card:nth-child(2) {
+    background-image: url("img/layers.png");
+}
+
+.cards .card:nth-child(3) {
+    background-image: url("img/resume.png");
+}
+
+.cards .card:nth-child(4) {
+    background-image: url("img/github.png");
 }
 
 /* Media queries */

@@ -18,6 +18,20 @@ const Nav = () => {
                         <h1>Jesper</h1>
                         <h3>Software Developer</h3>
                     </div>
+                    <div className="cards">
+                        <div className="card">
+                            <h1>About me</h1>
+                        </div>
+                        <div className="card">
+                            <h1>Projects</h1>
+                        </div>
+                        <div className="card">
+                            <h1>Resume</h1>
+                        </div>
+                        <div className="card">
+                            <h1>GitHub</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>  
