@@ -94,8 +94,8 @@
     flex-direction: column; /* Children will be arranged in a column */
     align-items: center; /* Center children horizontally */
     justify-content: flex-end; /* Align children at the bottom */
-    width: 18em;
-    height: 18em;
+    width: 35%;
+    height: 14em;
     color: rgb(0, 0, 0);
     border: 10px solid black;
     border-radius: 30px;
