@@ -5,36 +5,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #2a003a;
 }
 
 /* Nav-Bar */
-
-.cover {
-    background-image: url("./img/banner.png");
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 100%), url('img/banner.png');
-    background-repeat: none;
-    background-size: cover;
-    height: 100vh;
-}
 
 .nav {
     display: flex;
     align-items: top;
     justify-content: space-between;
     color: white;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #logo {
-    margin: 20px;
-    width: 130px;
+    padding-top: 20px;
+    width: 110px;
     position: fixed;
 }
 
 .links {
-    padding-top: 70px;
+    padding-top: 65px;
     display: flex;
     gap: 120px;
-    padding-right: 100px;
+    padding-right: 50px;
     font-weight: 500;
     font-size: larger;
 }
@@ -45,89 +40,26 @@
 }
 
 .links > a:hover {
-    text-decoration: none;
     color: rgb(197, 197, 197);
 }
 
-/* Nav-Area */
+/* Main */
 
-.navcenter-area {
-    padding-top: 120px;
-    width: 100%;
+.main-content{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    color: white;
+    padding-top: 10vh;
+    height: 60vh;
 }
 
-.infocard {
-    background-color: white;
-    width: 30%;
-    height: 58em;
-    margin-right: 150px;
+.main-content-text{
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 50px;
-    border-bottom: 1px solid rgb(154, 154, 154);
-}
-
-.title > * {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.cards{
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 80px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column; /* Children will be arranged in a column */
-    align-items: center; /* Center children horizontally */
-    justify-content: flex-end; /* Align children at the bottom */
-    width: 35%;
-    height: 14em;
-    color: rgb(0, 0, 0);
-    border: 10px solid black;
-    border-radius: 30px;
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: transform 0.6 ease;
-}
-
-.card > h1{
-    padding-bottom: 20px;
-}
-
-.card:hover {
-    background-color: rgb(201, 201, 201);
-    transform: translateY(-10px);
-}
-
-.cards .card:nth-child(1) {
-    background-image: url("img/user.png");
-}
-
-.cards .card:nth-child(2) {
-    background-image: url("img/layers.png");
-}
-
-.cards .card:nth-child(3) {
-    background-image: url("img/resume.png");
-}
-
-.cards .card:nth-child(4) {
-    background-image: url("img/github.png");
+#titlegreeting{
+    font-size: 80px;
 }
 
 /* Media queries */
@@ -136,18 +68,6 @@
     .links {
         padding-right: 50px;
         gap: 60px;
-    }
-
-    .navcenter-area {
-        display: flex;
-        justify-content: center;
-    }
-
-    .infocard {
-        width: 50%;
-        height: 500px;
-        border-radius: 30px;
-        margin-right: 0;
     }
 }
 
