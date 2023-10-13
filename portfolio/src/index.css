@@ -4,8 +4,14 @@
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #2a003a;
+}
+
+.App{
+    background-image: url("./img/bg-portfolio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    scroll-behavior: smooth;
 }
 
 /* Nav-Bar */
@@ -49,19 +55,42 @@
     display: flex;
     align-items: center;
     color: white;
-    padding-top: 10vh;
-    height: 60vh;
+    height: 95vh;
 }
 
 .main-content-text{
+    padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 #titlegreeting{
-    font-size: 80px;
+    font-size: 120px;
 }
 
+#titlemain{
+    font-size: 40px;
+}
+
+#main-button{
+    width: 50%;
+    height: 15vh;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: 5px solid #5e17eb;
+    transition: all 0.3s ease;
+}
+
+#main-button:hover{
+    transform: scale(0.95);
+    background-color: #5e17eb;
+}
 /* Media queries */
 
 @media screen and (max-width: 1268px) {
