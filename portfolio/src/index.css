@@ -6,12 +6,12 @@
     padding: 0;
 }
 
-.App{
+.top{
     background-image: url("./img/bg-portfolio.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
     scroll-behavior: smooth;
+    height: 112vh;
 }
 
 /* Nav-Bar */
