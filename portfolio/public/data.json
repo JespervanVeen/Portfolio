@@ -7,22 +7,22 @@
         "img": "img/askfree.png"      
     },
     {
-        "title": "Freepack Askfree",
-        "desc": "Making improvements to an existing system. Added new call in sick and archive worker functionailty.",
-        "year": 2024,
+        "title": "Portfolio Website",
+        "desc": "A website to show what i have made and learnt so far.",
+        "year": 2023,
         "id": 2,
-        "img": "img/no.jpg"     
+        "img": "img/portfolio.png"     
     },
     {
         "title": "To be filled in",
-        "desc": "Making improvements to an existing system. Added new call in sick and archive worker functionailty.",
+        "desc": "-",
         "year": 2025,
         "id": 3,
         "img": "img/no.jpg"        
     },
     {
         "title": "To be filled in",
-        "desc": "Making improvements to an existing system. Added new call in sick and archive worker functionailty.",
+        "desc": "-",
         "year": 2026,
         "id": 4,
         "img": "img/no.jpg"         
