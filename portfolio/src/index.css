@@ -125,7 +125,6 @@
 }
 
 .projects-main-text{
-    margin-left: 5%;
     width: 30%;
     height: 500px;
     display: flex;
@@ -137,6 +136,14 @@
 
 .project-item > h2{
     font-size: 1.8rem;
+}
+
+.langdiv{
+    width: 400px;
+    height: 25%;
+    background-color: #ffffff;
+    border: 5px solid #5E17EB;
+    border-radius: 20px;
 }
 
 .projects-image{
@@ -163,6 +170,8 @@
 
     .project-item{
         text-align: center;
+        display: flex;
+        align-items: center;
     }
 
     .projects-main{
@@ -173,7 +182,8 @@
     }
 
     .projects-main-text{
-        padding-right: 5%;
+        display: flex;
+        justify-content: center;
     }
 
     .project-title-div{

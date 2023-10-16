@@ -30,6 +30,9 @@ const Projects = () => {
               <h1 id="projects-text-title">{selectedProject.title}</h1>
               <h2 id="projects-text-desc">{selectedProject.desc}</h2>
               <h2 id="projects-text-year">{selectedProject.year}</h2>
+              <div className="langdiv">
+            
+              </div>
             </div>
           )}
         </div>
