@@ -1,0 +1,11 @@
+.circle{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #8C52FF;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    transition: all 0.1s ease; 
+}

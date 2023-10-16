@@ -31,7 +31,9 @@ const Projects = () => {
               <h2 id="projects-text-desc">{selectedProject.desc}</h2>
               <h2 id="projects-text-year">{selectedProject.year}</h2>
               <div className="langdiv">
-            
+                <img class="lang-icon" src={selectedProject.language1} alt=""></img>
+                <img class="lang-icon" src={selectedProject.language2} alt=""></img>
+                <img class="lang-icon" src={selectedProject.language3} alt=""></img>
               </div>
             </div>
           )}
