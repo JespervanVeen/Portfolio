@@ -27,6 +27,7 @@ const Projects = () => {
         <div className="projects-main-text">
           {selectedProject && (
             <div className="project-item">
+              <button className="view-button">View</button>
               <h1 id="projects-text-title">{selectedProject.title}</h1>
               <h2 id="projects-text-desc">{selectedProject.desc}</h2>
               <h2 id="projects-text-year">{selectedProject.year}</h2>
@@ -36,6 +37,7 @@ const Projects = () => {
                 <img class="lang-icon" src={selectedProject.language3} alt=""></img>
               </div>
             </div>
+            
           )}
         </div>
         <div className="projects-main-images">
