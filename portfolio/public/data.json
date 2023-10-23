@@ -7,7 +7,8 @@
         "img": "img/askfree.png",
         "language1": "img/PHP-icon.png",
         "language2": "img/MySQL-icon.png",
-        "language3": "img/JS-icon.png"      
+        "language3": "img/JS-icon.png",
+        "offset": 0      
     },
     {
         "title": "Portfolio Website",
@@ -16,20 +17,23 @@
         "id": 2,
         "img": "img/portfolio.png",
         "language1": "img/React-icon.png",
-        "language2": "img/JS-icon.png"      
+        "language2": "img/JS-icon.png",
+        "offset": 0.8      
     },
     {
-        "title": "To be filled in",
+        "title": "To be fieelled in",
         "desc": "-",
         "year": 2025,
         "id": 3,
-        "img": "img/no.jpg"        
+        "img": "img/no.jpg",
+        "offset": 1.1         
     },
     {
-        "title": "To be filled in",
+        "title": "To be fiwlled in",
         "desc": "-",
         "year": 2026,
         "id": 4,
-        "img": "img/no.jpg"         
+        "img": "img/no.jpg",
+        "offset": 1.9        
     }
 ]

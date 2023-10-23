@@ -1,22 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     fetch("../data.json")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
-        setSelectedProject(data[0]);
       });
   }, []);
-
-  const handleImage = (projectId) => {
-    const project = projects.find((project) => project.id === projectId);
-    setSelectedProject(project);
-  };
 
   return (
     <div className="projects-content">
@@ -24,33 +18,21 @@ const Projects = () => {
         <h1 id="projects-title">Projects</h1>
       </div>
       <div className="projects-main">
-        <div className="projects-main-text">
-          {selectedProject && (
-            <div className="project-item">
-              <button className="view-button">View</button>
-              <h1 id="projects-text-title">{selectedProject.title}</h1>
-              <h2 id="projects-text-desc">{selectedProject.desc}</h2>
-              <h2 id="projects-text-year">{selectedProject.year}</h2>
-              <div className="langdiv">
-                <img class="lang-icon" src={selectedProject.language1} alt=""></img>
-                <img class="lang-icon" src={selectedProject.language2} alt=""></img>
-                <img class="lang-icon" src={selectedProject.language3} alt=""></img>
-              </div>
+        <Parallax pages={3}>
+          <ParallaxLayer sticky={{ start: 0, end: 3 }} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+            <img id="projects-img" src="" alt="No img found"></img>
+          </ParallaxLayer>
+
+        {projects.map((project) => (
+          <ParallaxLayer key={project.id} offset={project.offset} speed={0.5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+            <div className="item">
+              <h1>{project.title}</h1>
+              <h2>{project.desc}</h2>
+              <h1>{project.year}</h1>
             </div>
-            
-          )}
-        </div>
-        <div className="projects-main-images">
-          {projects.map((project) => (
-            <img
-              key={project.id}
-              src={process.env.PUBLIC_URL + "/" + project.img}
-              alt=""
-              className="projects-image"
-              onClick={() => handleImage(project.id)}
-            />
-          ))}
-        </div>
+          </ParallaxLayer>
+        ))}
+        </Parallax>
       </div>
     </div>
   );
