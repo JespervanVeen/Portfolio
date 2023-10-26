@@ -18,22 +18,15 @@
         "img": "img/portfolio.png",
         "language1": "img/React-icon.png",
         "language2": "img/JS-icon.png",
-        "offset": 0.8      
+        "offset": 0.74      
     },
     {
-        "title": "To be fieelled in",
-        "desc": "-",
-        "year": 2025,
+        "title": "Weather Website",
+        "desc": "A website to view weather based on location",
+        "year": 2023,
         "id": 3,
-        "img": "img/no.jpg",
-        "offset": 1.1         
-    },
-    {
-        "title": "To be fiwlled in",
-        "desc": "-",
-        "year": 2026,
-        "id": 4,
-        "img": "img/no.jpg",
-        "offset": 1.9        
+        "img": "img/weather.jpg",
+        "language1": "img/JS-icon.png",
+        "offset": 1   
     }
 ]

@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, forwardRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Slide from "./Slide";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Projects = () => {
+
+const Projects = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -13,14 +16,14 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects-content">
+    <div ref={ref} className="projects-content">
       <div className="project-title-div">
         <h1 id="projects-title">Projects</h1>
       </div>
       <div className="projects-main">
-        <Parallax pages={3}>
-          <ParallaxLayer sticky={{ start: 0, end: 3 }} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-            <img id="projects-img" src="" alt="No img found"></img>
+        <Parallax id="par" style={{overflow: 'scroll'}} pages={2}>
+          <ParallaxLayer sticky={{ start: 0, end: 2 }} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+            <Slide />
           </ParallaxLayer>
 
         {projects.map((project) => (
@@ -28,7 +31,12 @@ const Projects = () => {
             <div className="item">
               <h1>{project.title}</h1>
               <h2>{project.desc}</h2>
-              <h1>{project.year}</h1>
+              <h3>{project.year}</h3>
+              <div className="lang">
+                <img className="item-lang" src={project.language1} alt=""></img>
+                <img className="item-lang" src={project.language2}></img>
+                <img className="item-lang" src={project.language3}></img>
+              </div>
             </div>
           </ParallaxLayer>
         ))}
@@ -36,6 +44,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Projects;

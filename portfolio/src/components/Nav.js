@@ -1,14 +1,14 @@
 import logo from '../logo.png'
 
-const Nav = () => {
+const Nav = ({ scrollTo, scrollToExp }) => {
     return (
             <div className="nav">
                 <div className="logoarea">
                     <img id="logo" src={logo} alt="lowl" />
                 </div>
                 <div className="links">
-                    <a href='/'>About me</a>
-                    <a href='/'>Projects</a>
+                    <a onClick={scrollTo}>Projects</a>
+                    <a onClick={scrollToExp}>Experience</a>
                 </div>
             </div>
     ); 
